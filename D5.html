@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <style>
+        header {
+            background-color: blanchedalmond;                       
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-left: 2px;
+        }
+
+        li {
+            margin-left: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: rgb(3, 0, 0);
+        }
+
+        li:hover {
+            color: rgb(220, 49, 49);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #g {
+            text-align: left;
+            margin-left: 0px;
+            padding-right: 5px;
+        }
+
+        img:hover {
+            background-color: cornflowerblue;
+        }
+
+        #video {
+            margin-top: 120px;
+            margin-left: 140px;
+            transform: translate(23%);
+            border-radius: 5px;
+        }
+
+        .sub {
+            text-align: center;
+            padding-top: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+            height: 100%;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+
+        i {
+            margin-left: 35px;
+            font-size: 25px;
+            margin-top: 17px;
+        }
+
+        i.test:hover {
+            background-image: linear-gradient(20deg, pink, orange, yellow);
+            background-clip: icon;
+            -webkit-background-clip: icon;
+            height: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #globe {
+            margin-left: 65%;
+        }
+
+        .about {
+            margin-left: 25px;
+        }
+
+        #column2 {
+            padding-left: 150px;
+        }
+
+        #footerimg {
+            margin-left: 55px;
+        }
+
+        p.explore:hover {
+            background-color: rgb(239, 242, 247);
+            border-radius: 5px;
+            height: 25px;
+            cursor: pointer;
+            padding-top: 4px;
+        }
+
+        p.subline {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .product {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(87, 87, 234);
+            border-radius: 8px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .viewproduct {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            border-radius: 8px;
+            color: rgb(87, 87, 234);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .edu {
+            text-align: center;
+            margin-left: 245px;
+        }
+
+        #imagebutton:hover {
+            border: 2px solid;
+            border-radius: 8px;
+            border-color: blue;
+            cursor: pointer;
+        }
+        .subqot{
+            font-size: 50px;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .cmt{
+            background-color: rgb(102, 102, 244);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            width: 200px;
+            height: 45px;
+            border-radius: 8px;
+            transform: translate(320%);
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul type="none">
+            <img id="g" src="https://about.google/assets-main/img/glue-google-color-logo.svg">
+            <li>About</li>
+            <li>Products</li>
+            <li>Commiteies</li>
+            <li>Stories</li>
+            <li>India Blog</li>
+        </ul>
+    </header>
+    <div style="display: flex;flex-direction: column;">
+        <h1 class="sub">Our mission is to <span style="color: dodgerblue;"> organize</span> the world’s<br><span
+                style="color: rgb(255, 30, 30);"> information</span> and make it <span
+                style="color: rgb(37, 168, 37);">universally accessible</span><br> and<span
+                style="color: rgb(255, 193, 38);"> useful</span></h1>
+        <iframe id="video" width="860" height="515" src="https://www.youtube.com/embed/4SCjXcBeW1E?si=MLwaKQRNtTOOl864"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+        <p style="text-align: center;font-size: 20px;">Look back on 25 years in Search history, honoring the most
+            searched moments that have inspired the<br> world and the next generation to come.</p>
+        <p class="explore"
+            style="text-align: center; width: 230px; font-size: 15px;color: cornflowerblue;margin-left: 650px;">Explore
+            25 Years in Search</p><br><br><br>
+        <p class="subline">Make life easier with a little help from<br> our products</p>
+        <div align="center">
+            <button class="product">View all our products</button>
+            <button class="viewproduct">View all our products</button>
+        </div><br><br><br><br>
+        <div style="cursor: pointer;">
+            <img id="imagebutton" class="edu" align="center" width="1000px" height="600px"
+                src="https://lh3.googleusercontent.com/DqEqxO5Pq4lGN3zdBfDmSWfG-20am-ORpzPA-DxCsnvadS7m_PcooNUPdggBippJsORIkB5ttL61Xa-pea_bzBqQf1FvTtqwIhPslB34qDfvvb9hp3A=w1440-l90-sg-rj-c0xffffff">
+            <p style="font-size: 13px;color: blue;text-align: center;">learn more</p><br><br><br>
+        </div>
+        <p class="subqot">Committed to significantly improving<br> the lives of as many people as possible</p>
+        <button align="center" class="cmt">View all our commitments</button><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer>
+            <div style="display: flex;">
+                <p>Follow us</p>
+                <a href="https://www.instagram.com/" target="_blank" style="color: black;"><i
+                        class="fa-brands fa-instagram test"></i></a>
+                <a href="https://www.youtube.com/" target="_blank" style="color: black;"><i
+                        class="fa-brands fa-youtube test"></i></a>
+                <a href="https://twitter.com/" target="_blank" style="color: black;"><i
+                        class="fa-brands fa-x-twitter test"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" style="color: black;"><i
+                        class="fa-brands fa-square-facebook test"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" style="color: black;"><i
+                        class="fa-brands fa-linkedin test"></i></a>
+                <i class="fa-solid fa-globe" id="globe"></i>
+                <select
+                    style="height: 30px; margin-left: 15px; margin-top: 15px;border-radius: 3px;font-family: cursive;cursor: pointer;">
+                    <option selected>English</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+            <hr>
+            <div style="display: flex;">
+                <ul type="none" style="display: flex;flex-direction: column;">
+                    <P class="about">More about us :</P>
+                    <li>Contact us</li><br>
+                    <li>Investor relations</li><br>
+                    <li>Careers</li><br>
+                    <li>Locations</li><br>
+                    <li>Blog</li><br>
+                    <li>Think with Google</li><br>
+                    <li>Transparency Center</li><br>
+                </ul>
+                <ul id="column2" type="none" style="display: flex;flex-direction: column">
+                    <P class="about">Press room :</P>
+                    <li>Press enquiries</li><br>
+                    <li>Images & B-roll</li><br>
+                    <li>Permissions</li><br>
+                </ul>
+                <ul type="none" style="display: flex;flex-direction: column;padding-left: 140px;">
+                    <p>Policy :</p>
+                    <li>Application security</li><br>
+                    <li>Software principles</li><br>
+                    <li>Unwanted software policy</li><br>
+                    <li>Responsible supply chain</li><br>
+                    <li>Extended workforce</li><br>
+                    <li>Conflict minerals policy</li><br>
+                    <li>Community Guidelines</li><br>
+                    <li>How our business works</li><br>
+                </ul>
+            </div>
+            <hr>
+            <div style="display: flex;">
+                <img id="footerimg" src="https://about.google/assets-main/img/glue-google-solid-logo.svg">
+                <ul type="none" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <p style="margin-bottom: 35px;">
+                        <li><i style="size: 200px;" class="fa-solid fa-circle-question"></i> Help</li>
+                        <li style="margin-top: 20px;margin-left: 100px;">Privacy</li>
+                        <li style="margin-top: 20px;margin-left: 100px;">terms</li>
+                    </p>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
